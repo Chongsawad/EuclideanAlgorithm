@@ -31,8 +31,8 @@ while true
   
   qq.push(q)
   
-  #puts eq.a.to_s + " = " + eq.b.to_s + " * " + q.to_s + " + " + r.to_s
-  puts "a:"+ eq.a.to_s + "\tb:" + eq.b.to_s + "\tq:" + q.to_s + " \tr:" + r.to_s
+  puts eq.a.to_s + " = " + eq.b.to_s + " * " + q.to_s + " + " + r.to_s
+  #puts "a:"+ eq.a.to_s + "\tb:" + eq.b.to_s + "\tq:" + q.to_s + " \tr:" + r.to_s
   if r == 0
     eq.gcd = eq.b
     puts "gcd("+ eq.ta.to_s + "," + eq.tb.to_s + ") : " + eq.gcd.to_s
@@ -43,9 +43,34 @@ while true
     end
     eq.u = vv[vv.length-2]*-1
     eq.v = rr[rr.length-2]
+    
+#    print("quotients : ")
+#    
+#    qq.each do |q| 
+#      print("#{q.to_s} \t")
+#    end
+#    puts "\n"
+#          
+#    print("row 1 : ")
+#    
+#    rr.each do |r| 
+#      print("#{r.to_s} \t")
+#    end
+#    puts "\n"
+#
+#    print("row 2 : ")
+#    
+#    vv.each do |v| 
+#      print("#{v.to_s} \t")
+#    end
+#    puts "\n"
+    puts "Quotients"
     puts qq
+    puts "ROW:1"
     puts rr
+    puts "ROW:2"
     puts vv
+    
     puts "u:" + eq.u.to_s + "  v:" + eq.v.to_s
     
     if eq.u*eq.ta + eq.v*eq.tb == eq.gcd
