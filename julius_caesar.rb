@@ -20,7 +20,7 @@ class JuliusCaesar
   
   def shiftCipherWheel
     
-    if @clk == CLOCKWISE
+    if @clk == COUNTERCLOCKWISE
       @sh.times do
         t = @ck.shift
         @ck = @ck.push(t)
@@ -45,7 +45,7 @@ class JuliusCaesar
   
 end
 
-jj = JuliusCaesar.new(ARGV[0],ARGV[1],ARGV[2])
+JC = JuliusCaesar.new(ARGV[0],ARGV[1],ARGV[2])
 
 
 

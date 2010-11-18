@@ -6,12 +6,8 @@ class CountString
     @v = @v.upcase.gsub(/[^\w]/,"")
     @ws = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     @rr=[]
+    self.CountAll
   end
-  
-  def Hello
-    puts "HELLO"
-  end
-  
   def CountAll
     @ws.each do |w|
       vv = @v.count w.to_s
@@ -19,13 +15,13 @@ class CountString
         @rr.push("#{vv}:#{w.to_s}")
       end
     end
-    puts @rr.sort.reverse
+    @rr.sort.reverse.each { |r| print "#{r} \t"}
+    puts "\n"
   end
-
 end
 
 dd = CountString.new(ARGV[0])
-dd.CountAll
+
 
 
 
