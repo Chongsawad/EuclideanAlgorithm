@@ -31,8 +31,8 @@ while true
   
   qq.push(q)
   
-  puts eq.a.to_s + " = " + eq.b.to_s + " * " + q.to_s + " + " + r.to_s
-  #puts "a:"+ eq.a.to_s + "\tb:" + eq.b.to_s + "\tq:" + q.to_s + " \tr:" + r.to_s
+  #puts eq.a.to_s + " = " + eq.b.to_s + " * " + q.to_s + " + " + r.to_s
+  puts "a:"+ eq.a.to_s + "\tb:" + eq.b.to_s + "\tq:" + q.to_s + " \tr:" + r.to_s
   if r == 0
     eq.gcd = eq.b
     puts "gcd("+ eq.ta.to_s + "," + eq.tb.to_s + ") : " + eq.gcd.to_s
