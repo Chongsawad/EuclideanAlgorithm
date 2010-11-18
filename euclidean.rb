@@ -41,29 +41,9 @@ while true
       rr[i+2] = qq[i]*rr[i+1]+rr[i]
       vv[i+2] = qq[i]*vv[i+1]+vv[i]
     end
-    eq.u = vv[vv.length-2]*-1
-    eq.v = rr[rr.length-2]
+    eq.u = vv[vv.length-2]
+    eq.v = rr[rr.length-2]*-1
     
-#    print("quotients : ")
-#    
-#    qq.each do |q| 
-#      print("#{q.to_s} \t")
-#    end
-#    puts "\n"
-#          
-#    print("row 1 : ")
-#    
-#    rr.each do |r| 
-#      print("#{r.to_s} \t")
-#    end
-#    puts "\n"
-#
-#    print("row 2 : ")
-#    
-#    vv.each do |v| 
-#      print("#{v.to_s} \t")
-#    end
-#    puts "\n"
     puts "Quotients"
     puts qq
     puts "ROW:1"
